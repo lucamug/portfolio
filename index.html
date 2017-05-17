@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+    <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+    <title>CodePen - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luca Mugnaini's Portfolio - UX Designer, Photos, Videos">
+    <meta name="author" content="Luca Mugnaini">
+    <title>Luca Mugnaini - UX Design - Photos - Videos</title>
+    <!-- Core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- Add fancyBox CSS files -->
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" media="screen">
+    <llink rel="stylesheet" type="text/css" href="fancybox_source/jquery.fancybox.css?v=2.1.5" media="screen">
+        <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+        <style>
+        /* ==== Google font ==== */
+        
+        @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #666;
+            background-color: #fff;
+        }
+        
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0 0 30px;
+            text-transform: uppercase;
+            font-family: Gloria Hallelujah, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        h1 {
+            color: #FFF;
+            text-shadow: none;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700;
+            font-family: Gloria Hallelujah, sans-serif;
+            background-color: rgba(0, 0, 0, 0);
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 0px;
+            border-color: #000;
+            border-style: none;
+            text-shadow: -1px 0 1px #000;
+        }
+        
+        p {
+            margin: 0 0 20px;
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+        
+        p.lead {
+            font-weight: 600;
+        }
+        
+        a {
+            color: #28c3ab;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+        
+        a:hover,
+        a:focus {
+            text-decoration: none;
+            color: #444444;
+        }
+        
+        .light {
+            font-weight: 400;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+        }
+        
+        .navbar-brand {
+            height: 40px;
+            padding: 5px 15px;
+            font-size: 18px;
+            line-height: 1em;
+        }
+        
+        .navbar-brand h1 {
+            color: #fff;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        
+        .navbar-brand:focus {
+            outline: 0;
+        }
+        
+        .nav.navbar-nav {
+            background-color: rgba(255, 255, 255, .4);
+        }
+        
+        .navbar-custom.top-nav-collapse .nav.navbar-nav {
+            background-color: rgba(0, 0, 0, 0);
+        }
+        
+        .navbar-custom ul.nav li a {
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #444;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .navbar-custom.top-nav-collapse ul.nav li a {
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            color: #fff;
+        }
+        
+        .navbar-custom ul.nav ul.dropdown-menu {
+            border-radius: 0;
+        }
+        
+        .navbar-custom ul.nav ul.dropdown-menu li {
+            border-bottom: 1px solid #f5f5f5;
+        }
+        
+        .navbar-custom ul.nav ul.dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+        
+        .navbar-custom ul.nav ul.dropdown-menu li a {
+            padding: 10px 20px;
+        }
+        
+        .navbar-custom ul.nav ul.dropdown-menu li a:hover {
+            background: #fefefe;
+        }
+        
+        .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
+            color: #666;
+        }
+        
+        .navbar-custom .nav li a {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+        }
+        
+        .navbar-custom .nav li a:hover,
+        .navbar-custom .nav li a:focus,
+        .navbar-custom .nav li.active {
+            outline: 0;
+            background-color: rgba(255, 255, 255, .2);
+        }
+        
+        .navbar-custom .nav li a:hover,
+        .navbar-custom .nav li a:focus,
+        .navbar-custom .nav li.active {
+            outline: 0;
+            background-color: rgba(255, 255, 255, .2);
+        }
+        
+        .navbar-toggle {
+            padding: 4px 6px;
+            font-size: 14px;
+            color: #fff;
+        }
+        
+        .navbar-toggle:focus,
+        .navbar-toggle:active {
+            outline: 0;
+        }
+        /* loader */
+        
+        #preloader {
+            background: #ffffff;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        #loaderInner {
+            background: #ffffff url(https://lh3.googleusercontent.com/x7Dcz82LpvZASwEKeSFp2tuGj_m468RHNSfnOr3muEZVEOKqF9BpxbutLytTKPPT47Bec0ELbzOP7Y4oGuKQYK3-czWSCKpxWqEw3skQ_ONyMgbfyiWpA485OQBLgq2jLpeahQrUKnSTYXEY8wPuzeXldvgKRSXELvhJYDeQP9X6zmsIMXPCCITKQkpF4AQ8YG4huWdCBmk1MYw4sos-OebL-k5wDVgIzGfqsU9P5OTCkeCZ6TDvF_Fy1A4eTMw-DdtwJ-WanPu4u_OccFL9pUJF65wSZ-MCDs88HBq7xho8MQIwxrSZU7xB4jMxNKKY9vI6QkjEAsJ8MZSeeitBWPgITbg-pQP7EXZ-aS1aBV_HD0kNsErEiTsE0v8sEYUZAH9TwMyPAghcMam4JMKk-bsnf-IKF7BC7-c4r50-cQYuKz6UPmPWLIMbArUaH7uj7flnrkoZXzeeBzh4hEbT1PeBGh_jLL9qb7NZIc3HKqBAnUgsPmxdjbttTKkqpgfdYrwXJC4SIcifUlvEYWZOQ0OhiSmO8_Fv2beBkenaCSeIpncJR5-XB8TyydCvstZnRWAPBsPOChVas4Qt7zOZ05IUJGwwjmI=s40-no) center center no-repeat;
+            height: 60px;
+            left: 50%;
+            margin: -50px 0 0 -50px;
+            position: absolute;
+            top: 50%;
+            width: 60px;
+        }
+        
+        @keyframes boxSpin {
+            0% {
+                transform: translate(-10px, 0px);
+            }
+            25% {
+                transform: translate(10px, 10px);
+            }
+            50% {
+                transform: translate(10px, -10px);
+            }
+            75% {
+                transform: translate(-10px, -10px);
+            }
+            100% {
+                transform: translate(-10px, 10px);
+            }
+        }
+        
+        @keyframes shadowSpin {
+            0% {
+                box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
+            }
+            25% {
+                box-shadow: 10px 10px #39CCCC, -10px -10px #FFDC00;
+            }
+            50% {
+                box-shadow: -10px 10px #39CCCC, 10px -10px #FFDC00;
+            }
+            75% {
+                box-shadow: -10px -10px #39CCCC, 10px 10px #FFDC00;
+            }
+            100% {
+                box-shadow: 10px -10px #39CCCC, -10px 10px #FFDC00;
+            }
+        }
+        
+        #load {
+            z-index: 9999;
+            background-color: #FF4136;
+            opacity: 0.75;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            margin: -5px auto 0 auto;
+            left: 0;
+            right: 0;
+            border-radius: 0px;
+            border: 5px solid #FF4136;
+            box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
+            animation: shadowSpin 1s ease-in-out infinite;
+        }
+        /* misc */
+        
+        hr {
+            margin-top: 10px;
+        }
+        /* margins */
+        
+        .marginbot-0 {
+            margin-bottom: 0 !important;
+        }
+        
+        .marginbot-10 {
+            margin-bottom: 10px !important;
+        }
+        
+        .marginbot-20 {
+            margin-bottom: 20px !important;
+        }
+        
+        .marginbot-30 {
+            margin-bottom: 30px !important;
+        }
+        
+        .marginbot-40 {
+            margin-bottom: 40px !important;
+        }
+        
+        .marginbot-50 {
+            margin-bottom: 50px !important;
+        }
+        /* ===========================
+--- General sections
+============================ */
+        
+        .home-section {
+            padding-top: 110px;
+            padding-bottom: 110px;
+            display: block;
+            position: relative;
+            z-index: 120;
+        }
+        
+        .section-heading h2 {
+            font-size: 40px;
+        }
+        
+        .section-heading i {
+            margin-bottom: 20px;
+        }
+        /* --- section bg var --- */
+        
+        .bg-white {
+            background: #fff;
+        }
+        
+        .bg-gray {
+            background: #f8f8f8;
+        }
+        
+        .bg-dark {
+            background: #575757;
+        }
+        /* --- section color var --- */
+        
+        .text-light {
+            color: #fff;
+        }
+        /* ===========================
+--- Intro
+============================ */
+        
+        .intro {
+            width: 100%;
+            position: relative;
+            background: url(https://lh3.googleusercontent.com/YXlfhJ-jrWNlqeHw1KOdzD1pJTwjOn83rBWb4IwlEWMcXmJ9577zCNEO9cMlNR3K3GNcKqaVQey4WDB99IzGIp_YztFAfLgAj45FhcsvVai4WSw18TTyBhDl_CfQH_jC8eJBfWD3OyYN-S3uGkTUQKGCPB9Br2qfdSCFK0fhAA2-QWaiq1DNBTiI_affYz1VnnuydOjJ58d1NGARWS1y3uKOrjvfAegDOEFnM-A_DxV4Kxkqrsz48lRy6A7T3x4BvPnaBowDIbTYyHkpEKp1VVZGb95WQxiBehznUt9dkx4TteZ9jMyBuszQbsWAmJsGD2R-QUArSFpRC07j_jOjjRs1EQlRRPNQ-HRB7je2o4C2SpR_6bVLintSaFgpDw8zDq5uiwQ6W3soEz4GcCrLq-So8AHuWwJj5MoTTDYIdA5kozwH8LcuyjYVuGupxFXJYrA-glChpTDT0W7puS9thEqm8hzagxjVgsyAG71au4uLF84zUZrcUhqewokGEuqOevukIDZRR2uQj3IAhIVsxXvyMz5IrWB1uigjMAoLWPI2sicwd8ZlsRz7hdI2BCxsznUGbLudVLnnuFE_7hOwKLHNtHoWZzs=w1366-h653-no) no-repeat top center;
+        }
+        
+        #intro.intro {
+            padding: 20% 0 0 0;
+        }
+        
+        .intro .slogan {
+            text-align: center;
+        }
+        
+        .intro .page-scroll {
+            text-align: center;
+        }
+        
+        .brand-heading {
+            font-size: 40px;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+        }
+        
+        .intro .slogan h2 {
+            color: #FFF;
+            text-shadow: none;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700;
+            font-family: Gloria Hallelujah, sans-serif;
+            background-color: rgba(0, 0, 0, 0);
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 0px;
+            border-color: #000;
+            border-style: none;
+            text-shadow: -1px 0 1px #000;
+        }
+        
+        .intro .slogan h4 {
+            color: #fff;
+            text-shadow: -1px 1px 1px #000;
+        }
+        /* ===========================
+--- About
+============================ */
+        
+        .boxed-grey {
+            background: #ddd;
+            padding: 20px;
+        }
+        
+        .team h5 {
+            margin-bottom: 10px;
+        }
+        
+        .team p.subtitle {
+            margin-bottom: 10px;
+        }
+        
+        .avatar {
+            margin-bottom: 20px;
+        }
+        
+        .team-social {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        
+        .team-social {
+            text-align: center;
+        }
+        
+        .team-social li {
+            display: inline-block;
+            margin: 0 !important;
+            padding: 0;
+        }
+        
+        .team-social a {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #3bbec0;
+            color: #fff;
+            -webkit-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+        }
+        
+        .team-social a i {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .team-social .social-facebook a {
+            background: #3873ae;
+        }
+        
+        .team-social .social-twitter a {
+            background: #62c6f8;
+        }
+        
+        .team-social .social-dribble a {
+            background: #d74980;
+        }
+        
+        .team-social .social-deviantart a {
+            background: #8da356;
+        }
+        
+        .team-social .social-google a {
+            background: #000;
+        }
+        
+        .team-social .social-vimeo a {
+            background: #51a6d3;
+        }
+        
+        .team-social .social-facebook a:hover {
+            background: #4893ce;
+        }
+        
+        .team-social .social-twitter a:hover {
+            background: #82e6ff;
+        }
+        
+        .team-social .social-dribble a:hover {
+            background: #f769a0;
+        }
+        
+        .team-social .social-deviantart a:hover {
+            background: #adc376;
+        }
+        
+        .team-social .social-google a:hover {
+            background: #333;
+        }
+        
+        .team-social .social-vimeo a:hover {
+            background: #71c6f3;
+        }
+        /* ===========================
+--- Services
+============================ */
+        
+        .service-icon {
+            margin-bottom: 20px;
+        }
+        /* ===========================
+--- Contact
+============================ */
+        
+        form#contact-form .form-group label {
+            text-align: left !important;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+        
+        form#contact-form input,
+        form#contact-form select,
+        form#contact-form textarea {
+            border-radius: 0;
+            border: 1px solid #eee;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        
+        form#contact-form input:focus,
+        form#contact-form select:focus,
+        form#contact-form textarea:focus {
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+        }
+        
+        .input-group-addon {
+            background-color: #fefefe;
+            border: 1px solid #eee;
+            border-radius: 0;
+        }
+        
+        .widget-contact {
+            text-align: left;
+        }
+        
+        .company-social {
+            margin-left: 0;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+        
+        .company-social {
+            text-align: left;
+        }
+        
+        .company-social li {
+            display: inline-block;
+            margin: 0 !important;
+            padding: 0;
+        }
+        
+        .company-social a {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #3bbec0;
+            color: #fff;
+            -webkit-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+        }
+        
+        .company-social a i {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .company-social .social-facebook a {
+            background: #3873ae;
+        }
+        
+        .company-social .social-twitter a {
+            background: #62c6f8;
+        }
+        
+        .company-social .social-dribble a {
+            background: #d74980;
+        }
+        
+        .company-social .social-deviantart a {
+            background: #8da356;
+        }
+        
+        .company-social .social-google a {
+            background: #000;
+        }
+        
+        .company-social .social-vimeo a {
+            background: #51a6d3;
+        }
+        
+        .company-social .social-facebook a:hover {
+            background: #4893ce;
+        }
+        
+        .company-social .social-twitter a:hover {
+            background: #82e6ff;
+        }
+        
+        .company-social .social-dribble a:hover {
+            background: #f769a0;
+        }
+        
+        .company-social .social-deviantart a:hover {
+            background: #adc376;
+        }
+        
+        .company-social .social-google a:hover {
+            background: #333;
+        }
+        
+        .company-social .social-vimeo a:hover {
+            background: #71c6f3;
+        }
+        /* ===========================
+--- Footer
+============================ */
+        
+        footer {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        footer p {
+            color: #f8f8f8;
+        }
+        /* ==========================
+Parallax
+============================= */
+        
+        #parallax1 {
+            background-image: url(https://lh3.googleusercontent.com/YXlfhJ-jrWNlqeHw1KOdzD1pJTwjOn83rBWb4IwlEWMcXmJ9577zCNEO9cMlNR3K3GNcKqaVQey4WDB99IzGIp_YztFAfLgAj45FhcsvVai4WSw18TTyBhDl_CfQH_jC8eJBfWD3OyYN-S3uGkTUQKGCPB9Br2qfdSCFK0fhAA2-QWaiq1DNBTiI_affYz1VnnuydOjJ58d1NGARWS1y3uKOrjvfAegDOEFnM-A_DxV4Kxkqrsz48lRy6A7T3x4BvPnaBowDIbTYyHkpEKp1VVZGb95WQxiBehznUt9dkx4TteZ9jMyBuszQbsWAmJsGD2R-QUArSFpRC07j_jOjjRs1EQlRRPNQ-HRB7je2o4C2SpR_6bVLintSaFgpDw8zDq5uiwQ6W3soEz4GcCrLq-So8AHuWwJj5MoTTDYIdA5kozwH8LcuyjYVuGupxFXJYrA-glChpTDT0W7puS9thEqm8hzagxjVgsyAG71au4uLF84zUZrcUhqewokGEuqOevukIDZRR2uQj3IAhIVsxXvyMz5IrWB1uigjMAoLWPI2sicwd8ZlsRz7hdI2BCxsznUGbLudVLnnuFE_7hOwKLHNtHoWZzs=w1366-h653-no);
+        }
+        
+        #parallax1:after {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        
+        #parallax2 {
+            background-image: url(https://lh3.googleusercontent.com/YXlfhJ-jrWNlqeHw1KOdzD1pJTwjOn83rBWb4IwlEWMcXmJ9577zCNEO9cMlNR3K3GNcKqaVQey4WDB99IzGIp_YztFAfLgAj45FhcsvVai4WSw18TTyBhDl_CfQH_jC8eJBfWD3OyYN-S3uGkTUQKGCPB9Br2qfdSCFK0fhAA2-QWaiq1DNBTiI_affYz1VnnuydOjJ58d1NGARWS1y3uKOrjvfAegDOEFnM-A_DxV4Kxkqrsz48lRy6A7T3x4BvPnaBowDIbTYyHkpEKp1VVZGb95WQxiBehznUt9dkx4TteZ9jMyBuszQbsWAmJsGD2R-QUArSFpRC07j_jOjjRs1EQlRRPNQ-HRB7je2o4C2SpR_6bVLintSaFgpDw8zDq5uiwQ6W3soEz4GcCrLq-So8AHuWwJj5MoTTDYIdA5kozwH8LcuyjYVuGupxFXJYrA-glChpTDT0W7puS9thEqm8hzagxjVgsyAG71au4uLF84zUZrcUhqewokGEuqOevukIDZRR2uQj3IAhIVsxXvyMz5IrWB1uigjMAoLWPI2sicwd8ZlsRz7hdI2BCxsznUGbLudVLnnuFE_7hOwKLHNtHoWZzs=w1366-h653-no);
+        }
+        
+        #parallax2:after {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        /* ===========================
+--- Elements
+============================ */
+        
+        .btn {
+            border-radius: 0;
+            text-transform: uppercase;
+            font-family: Gloria Hallelujah, sans-serif;
+            font-weight: 400;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+        
+        .btn-circle {
+            width: 70px;
+            height: 70px;
+            margin-top: 15px;
+            padding: 7px 16px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            font-size: 40px;
+            color: #fff;
+            background: 0 0;
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+        }
+        
+        .btn-circle.btn-dark {
+            border: 2px solid #666;
+            color: #666;
+        }
+        
+        .btn-circle:hover,
+        .btn-circle:focus {
+            outline: 0;
+            color: #fff;
+            background: rgba(255, 255, 255, .1);
+        }
+        
+        .btn-circle.btn-dark:hover,
+        .btn-circle.btn-dark:focus {
+            outline: 0;
+            color: #999;
+            background: #fff;
+        }
+        
+        .btn-circle.btn-dark:hover i,
+        .btn-circle.btn-dark:focus i {
+            color: #999;
+        }
+        
+        .page-scroll .btn-circle i.animated {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+        }
+        
+        .page-scroll .btn-circle:hover i.animated {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+        
+        @-webkit-keyframes pulse {
+            0 {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+            50% {
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        
+        @-moz-keyframes pulse {
+            0 {
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+            50% {
+                -moz-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+            100% {
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+        
+        #text {
+            color: #fff;
+            background: #ffcc00;
+        }
+        
+        #map {
+            height: 500px;
+        }
+        
+        .btn-skin:hover,
+        .btn-skin:focus,
+        .btn-skin:active,
+        .btn-skin.active {
+            color: #fff;
+            background-color: #666;
+            border-color: #666;
+        }
+        
+        .btn-default:hover,
+        .btn-default:focus {
+            border: 1px solid #28c3ab;
+            outline: 0;
+            color: #000;
+            background-color: #28c3ab;
+        }
+        
+        .btn-huge {
+            padding: 25px;
+            font-size: 26px;
+        }
+        
+        .banner-social-buttons {
+            margin-top: 0;
+        }
+        /* Media queries */
+        
+        @media(min-width:767px) {
+            .navbar {
+                padding: 20px 0;
+                border-bottom: 0;
+                letter-spacing: 1px;
+                background: 0 0;
+                -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+                transition: background .5s ease-in-out, padding .5s ease-in-out;
+            }
+            .top-nav-collapse {
+                padding: 0;
+                background-color: #000;
+            }
+            .navbar-custom.top-nav-collapse {
+                border-bottom: 1px solid rgba(255, 255, 255, .3);
+            }
+            .intro {
+                height: 100%;
+                padding: 0;
+            }
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 25px;
+            }
+        }
+        
+        @media (max-width:768px) {
+            .team.boxed-grey {
+                margin-bottom: 30px;
+            }
+            .boxed-grey {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width:480px) {
+            .navbar-custom .nav.navbar-nav {
+                background-color: rgba(255, 255, 255, .4);
+            }
+            .navbar.navbar-custom.navbar-fixed-top {
+                margin-bottom: 30px;
+            }
+            .tp-banner-container {
+                padding-top: 40px;
+            }
+            .page-scroll a.btn-circle {
+                width: 40px;
+                height: 40px;
+                margin-top: 10px;
+                padding: 7px 0;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                font-size: 20px;
+            }
+        }
+        
+        .fancybox-nav {
+            width: 60px;
+        }
+        
+        .fancybox-nav span {
+            visibility: visible;
+            opacity: 0.5;
+        }
+        
+        .fancybox-nav:hover span {
+            opacity: 1;
+        }
+        
+        .fancybox-next {
+            right: -60px;
+        }
+        
+        .fancybox-prev {
+            left: -60px;
+        }
+        
+        .fancybox-title {
+            text-align: center;
+        }
+        
+        a,
+        .tp-caption a.btn:hover {
+            // color: #67b0d1;
+            color: #4d7b8f;
+            // color: white;
+        }
+        
+        .top-nav-collapse {
+            background: #67b0d1;
+        }
+        
+        .navbar-custom ul.nav ul.dropdown-menu li a:hover {
+            color: #67b0d1;
+        }
+        
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span {
+            background-color: #67b0d1;
+        }
+        
+        .widget-avatar .avatar:hover {
+            border: 5px solid #67b0d1;
+        }
+        
+        .bg-skin {
+            background: #67b0d1;
+        }
+        
+        form#contact-form input:focus,
+        form#contact-form select:focus,
+        form#contact-form textarea:focus {
+            border-color: #67b0d1;
+        }
+        
+        footer {
+            background-color: #67b0d1;
+        }
+        
+        .btn-skin {
+            color: #fff;
+            background-color: #67b0d1;
+            border-color: #67b0d1;
+        }
+        
+        .fancybox-skin {
+            background: transparent;
+        }
+        
+        .footer {
+            color: #f8f8f8
+        }
+        
+        a.footer:hover {
+            color: #f8f8f8;
+            text-decoration: underline;
+        }
+        </style>
+</head>
+
+<body translate="no">
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="load"></div>
+        </div>
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <h1>Luca Mugnaini</h1>
+                    </a>
+                </div>
+                <!-- Nav links -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#intro">Intro</a></li>
+                        <li><a href="#ux_design">UX Design</a></li>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Section: intro -->
+        <section id="intro" class="intro">
+            <div class="slogan">
+                <h2>If you could fly,<br />where would you<br />build your nest?</h2>
+            </div>
+            <div class="page-scroll">
+                <a href="#ux_design" class="btn btn-circle">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </section>
+        <!-- /Section: intro -->
+        <!-- Section: UX design -->
+        <section id="ux_design" class="home-section text-center">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>UX Design</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
+                    </div>
+                </div>
+                <!-- UX design - 1 of 2 Row -->
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a href="https://4.bp.blogspot.com/-XV4xSrsYX2Y/V_tAbReah-I/AAAAAAAAFYw/ICz8p9eZpIkV6n5XhATriRRZe9_tnhrHQCLcB/s1600/Screen%2BShot%2B2016-10-10%2Bat%2B09.03.24.png" class="fancybox fancybox-button" rel="gallery0" data-fancybox-title="I created an Isomorphic developing envorinonment with Node.js for a new service launched in October 2016">
+                                        <div class="avatar">
+                                            <img src="https://4.bp.blogspot.com/-qsBfaXhxCks/V_tAX2fptfI/AAAAAAAAFYo/GhNb3QR5lUIE62BZiXBlaN0ywkTYkBxJQCLcB/s1600/r-thumb.png" alt="" class="img-responsive img-circle" />
+                                        </div>
+                                        <h5>Rakuten</h5>
+                                        <p class="subtitle">Inventing new services</p>
+                                    </a>
+                                    <a href="https://3.bp.blogspot.com/-T4YoVBGma7I/V_tAZFA998I/AAAAAAAAFYs/ZndOiOJM6CsFMjDNgPgI0clppP1N6u2qQCLcB/s1600/www.rakuten.co.uk-%2528iPhone%2B6%2BPlus%2529.png" class="fancybox fancybox-button" rel="gallery0" data-fancybox-title="The system is a SPA, atomically designed, components based, isomorphic and vanilla javascript running in node, loosely based on skeleton, fully responsive (the way google likes it), using sass and grunt, react style, json populated, hopefully SEO"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="1s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a href="https://4.bp.blogspot.com/-VRSlmlW0QEs/V18VXGqug4I/AAAAAAAAFI0/NACPc5zFm0orkkKzTb7PiGt6Z5LTWZpBwCLcB/s320/morgan_stanley_home.jpg" class="fancybox fancybox-button" rel="gallery2" data-fancybox-title="In Morgan Stanley I worked both on the Intranet and on the public website advocationg user centric design.">
+                                        <div class="avatar"><img src="https://2.bp.blogspot.com/-vSMqLg4EwAw/V18YLB3q4mI/AAAAAAAAFK4/jGxx17AL-bwBnYJ7PK2ziUTEhKXpzS3gwCLcB/s1600/morgan_stanley.jpg" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Morgan Stanley</h5>
+                                        <p class="subtitle">Advocating User Centric practices</p>
+                                    </a>
+                                    <a href="https://1.bp.blogspot.com/-MCo2cSD-VhI/V18Vpy6HsOI/AAAAAAAAFJc/0XRbrFA9zNgqVAmQk1qvf8Ui0421XH9gQCLcB/s320/morgan_stanley_schema.jpg" class="fancybox fancybox-button" rel="gallery2" data-fancybox-title="I re-engineered the Intranet in Japan that later has been adopted as a standard globally."></a>
+                                    <a href="https://3.bp.blogspot.com/-EyXb-Jd8qDM/V18Vp44FuYI/AAAAAAAAFJU/aDfckLr-KWYhXfrrm7cm9tsRV6SLsL3cgCLcB/s1600/morgan_stanley_persona.jpg" class="fancybox fancybox-button" rel="gallery2" data-fancybox-title="In Morgan Stanley I succesufully introduced  Persone to facilitate communication between different project owners."></a>
+                                    <a href="https://3.bp.blogspot.com/-sVt9tFq3qeg/V18Vpl3Dz1I/AAAAAAAAFJM/O0fiwnGfvoc-jzDSiskxgePoqcWwtCEIACLcB/s320/morgan_stanley_history.jpg" class="fancybox fancybox-button" rel="gallery2" data-fancybox-title="Public facing website has gone several iteration over time, improving usability and design."></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.5s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a href="https://3.bp.blogspot.com/-x7ngAQAHFYE/V18VqQ18swI/AAAAAAAAFJs/3tjNbkdi3skUpxVySY_MG2bYXY4zWdFjACLcB/s320/technics_musiccompilation.jpg" class="fancybox fancybox-button" rel="gallery3" data-fancybox-title="Responsive Web Design to o provide an optimal viewing experience across a wide range of devices.">
+                                        <div class="avatar"><img src="https://1.bp.blogspot.com/-3lOfeOPR4ig/V18YL7nDFVI/AAAAAAAAFLY/5DA2xuQn4wkB-KK3KK5vtPBhGV2yha_3wCLcB/s1600/technics_musiccompilation.jpg" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Technics</h5>
+                                        <p class="subtitle">Wireframes, Responsive web design</p>
+                                    </a>
+                                    <a href="https://3.bp.blogspot.com/-gnsftpd1m8I/V18VqHzHi9I/AAAAAAAAFJk/S0Vh2RQhB3kESZ4iMuY5BlTwckxlCWCIACLcB/s320/technics_expedia.jpg" class="fancybox fancybox-button" rel="gallery3" data-fancybox-title="Wireframes help to communicate ideas and workflow. This is a proposal for a better interaction with a flight search engine."></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.8s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a href="https://3.bp.blogspot.com/-zmL73n-wMWQ/V18Vqme2YjI/AAAAAAAAFJ0/cMi9BhUAODEADdtF6UQe8A_9LN5MdEeTgCLcB/s1600/webdesign_kafe.jpg" class="fancybox fancybox-button" rel="gallery4" data-fancybox-title="Page for an Europan Project for Lifelong Learning Kafe project.">
+                                        <div class="avatar"><img src="https://3.bp.blogspot.com/-dCkHIlzYhpo/V18YKwPHmFI/AAAAAAAAFKk/ydu4lU72sjA9NG50VP8Lp39hy_oAzpZEACLcB/s1600/guupa.jpg" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Converting idea into products</h5>
+                                        <p class="subtitle">Using latest web technology</p>
+                                    </a>
+                                    <a href="https://2.bp.blogspot.com/-G-YzX0Kmg9Q/V18VpcBnnqI/AAAAAAAAFJE/x8XmXWvvMeQOY2cpkD4D2q50Pv7d5gvEwCLcB/s320/guupa.jpg" class="fancybox fancybox-button" rel="gallery4" data-fancybox-title="Designed and developed Guupa. It was a social website written in Ruby on Ralis."></a>
+                                    <a href="https://1.bp.blogspot.com/-cPIalz2IbCQ/V18VpM1v1NI/AAAAAAAAFI8/ORgekH99dDIG_j5VYiq_NUGO8WiZh3qgwCLcB/s320/guupa_facets.jpg" class="fancybox fancybox-button" rel="gallery4" data-fancybox-title="Faceted classification"></a>
+                                    <a href="https://3.bp.blogspot.com/-djvj2awqI9I/V18VpUbI7jI/AAAAAAAAFJI/Ithmv3-Z0tY_07tE0p30zkBxLab9JasywCLcB/s320/guupa_local.jpg" class="fancybox fancybox-button" rel="gallery4" data-fancybox-title="Customized local pages"></a>
+                                    <a href="https://4.bp.blogspot.com/-MRM3S7lSP8U/V18Vq2DDf3I/AAAAAAAAFKE/ASL0iDE2mVkAESj22cZc52dQluBcio8_QCLcB/s1600/webdesign_sbattezzo.jpg" class="fancybox fancybox-button" rel="gallery4" data-fancybox-title="Website with geolocation capability."></a>
+                                    <a href="https://3.bp.blogspot.com/-9rkaaRpktPA/V18Vq9WI-AI/AAAAAAAAFJ8/MyhUdV_70X8adjFiUeMP7xO0Ar1owW3EACLcB/s320/webdesign_japaneseschool.jpg" class="fancybox fancybox-button" rel="gallery4" data-fancybox-title="Japanese Association of Tuscany - Helping the local community."></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section: UX design -->
+        <!-- Section: photos -->
+        <section id="photos" class="home-section text-center bg-gray">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Photos</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="https://2.bp.blogspot.com/-yL-2Hg7Wa1E/V18Y-9rYl3I/AAAAAAAAFLk/yG5xlIHIL3ElP0Kf9i-QHkU_rnHckijngCLcB/s1600/1-Iceland.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Iceland">
+                        <img src="https://3.bp.blogspot.com/-yVmFhBx-ZcI/V18aA1R-oDI/AAAAAAAAFMw/ncen_YMXfa4wyb1BwQfDnt02sembEbhIQCLcB/s1600/photos.jpg" alt="photos" style="width: 100%" />
+                    </a>
+                    <a href="https://2.bp.blogspot.com/-EruHrbF2TfU/V18Y_en0nmI/AAAAAAAAFLw/Nl2YU7G8Gi0n-Y9x3e7z_-gYDeRyz1U5gCLcB/s1600/2-Poland.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Poland"></a>
+                    <a href="https://3.bp.blogspot.com/-8H4nABlGdVQ/V18Y_DyioAI/AAAAAAAAFLs/pGUCs5pGL9Qgd6tW8kGmkJ8zodLHDnhOwCLcB/s1600/3-Italy.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Italy"></a>
+                    <a href="https://3.bp.blogspot.com/-gZGpiND4Ir0/V18Y_2HY4dI/AAAAAAAAFL4/aBksEAFfN_0Ci_cb4ZKB4WTxi8DuV0e2QCLcB/s1600/4-Finland.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Finland"></a>
+                    <a href="https://1.bp.blogspot.com/-hY7-D0noTs4/V18ZAmA8R5I/AAAAAAAAFMA/ZOt8i7VchfQLbMSc6zx2tQ7sr98Y9ahOACLcB/s1600/5-Poland.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Poland"></a>
+                    <a href="https://2.bp.blogspot.com/-8J2mCwXA5vw/V18ZBKKLdyI/AAAAAAAAFMI/Uk5BcWZVYMM8Lq9lt1l1NR7yUDZWJoUYwCLcB/s1600/6-Myanmar.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Myanmar"></a>
+                    <a href="https://1.bp.blogspot.com/-jH-xhvFDVck/V18ZB9vQGWI/AAAAAAAAFMU/bhh2iZMX2Cc-cEUSHpuhbbaY-ICkMSEygCLcB/s1600/7-Japan.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Japan"></a>
+                    <a href="https://3.bp.blogspot.com/-4uvZST3MrJI/V18ZB5MqgbI/AAAAAAAAFMQ/VgpCSWpSO0YrqwECzTtAog1DUOu4PjWbwCLcB/s1600/8-Poland.jpg" class="fancybox fancybox-button" rel="album0" data-fancybox-title="Poland"></a>
+                </div>
+            </div>
+        </section>
+        <!-- /Section: photos -->
+        <!-- Section: videos -->
+        <section id="videos" class="home-section text-center">
+            <div class="heading-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="wow bounceInDown" data-wow-delay="0.4s">
+                                <div class="section-heading">
+                                    <h2>Videos</h2>
+                                    <i class="fa fa-2x fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <hr class="marginbot-50">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.2s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a class="various fancybox.iframe" title="Yamanote Minuto" href="http://www.youtube.com/v/mXCjjtv0nEQ?fs=1&amp;autoplay=1">
+                                        <p class="subtitle">2007</p>
+                                        <div class="avatar"><img src="https://lh3.googleusercontent.com/sbg7AUxYYjWRiKdXoJXEPY_O5_exy3O2ct3nsx5QnSjad36lKMiTeQVqyHWfC4sZ-VDfvZrZMxunWOwsxFkt3cEWhfQpLB3_UU5yNmKIwR_r_kalIbZWOVO3APZQ_G3e4T5aQFmtJ4d5Ksc7VrxpXYDQZoFnFpqIz4n3gmrKe8z1ciyz878s-ZyfFGOBuhnfaugYmYBpyUzYVLQ3p04tHZILUi4hqq6jl1ydI9KGmdvI04fDKibOY1DVGdoHS6AXOSi8eLn0pbixbrZS3qoxpkcfeCYPL3SGHsCHuYuyRdBFMaORLMChob5PUxfZ6KQePfFyBH4GsxFoBTokdf2nG7RKhsekpBfrfaqFuz382Eh--_buZGuL5IuthXnWx8CyEUIzf9YZ3YSZallKxD0l09cxSyIBcBzETlLfRhxyrks8IF41ztG97qDEyr6vYYP2pMQwovvEdw5STe_K2amlklY7S-wgFzZ0zd-lrPiVl4L-dIfwj2bh-gxyHsvfl3qE_wSgV3TtQzmGHVkaW5ND_TmlN8B-TK_duqPOD_BeTOFCingeO_IULHvtao9VCPFbHRc2tayg5-ZeJNIsGh_dhzlqTyrJJX0=s300-no" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Yamanote Minuto</h5>
+                                        <p class="subtitle">Selected at Videominuto Film Festival, Florence, Italy</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.4s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a class="various fancybox.iframe" title="Ant.ichrist" href="http://www.youtube.com/v/go0ukYTbDA8?fs=1&amp;autoplay=1">
+                                        <p class="subtitle">2010</p>
+                                        <div class="avatar"><img src="https://lh3.googleusercontent.com/NEdd4hqlfdUnKEqGZp7k3mO3y3LUNc7rmWTJPmVxL0Cpn4L6pnqgl1mpH2r4ReOE4945346sAdPHJNQDO1RfY3Z14fs7IZCCYQHu92XPN2ddEshFYR7XQ1JC3ocC1FOx2d-FkcJVL6dVn5XntdPcnGwP3KmzbEXO6Ds-ktUov3UUc-3AUuu8XGiLb_Jof_Y9Tvu-eRbPQ--HUDyhaw9Zt3vxeB4rFzIY-_YkroSKhLIr1maAzPAmAvToSmTeGMPu37tGhtmlOyilVGUD8VtqeTyvBsFgdwZFyPXt58o-jrOe_o_UUgU1wJ4wL9qhCX9l9urWaFd0q7jOAO2Fa-NGGV8ujwiewg30VlJwI0ZPcEzXlFuMj-HeowiGBwrS28n43sQb3dBvEzr2V5_wmd7k96ZCrCSu9lmW8oE_fIM3SMLynjwCSl2SRwgP5zj0YkWl0I2U1bihu1zX1pcXQdKRvNKux-ZGb_Bx7iXBgR_McMud1ERb7ExKEexhwEj_52NNTFkiXD_WSw6DKuWlxdB1ZTz_vmeKr6jESxhppvo3nKpvEgxgC4Yclra5i91VPl-kZt5w-x1k4JkNqbqTnQAcRHcZKmRhNaw=s300-no" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Ant.ichrist</h5>
+                                        <p class="subtitle">Awarded at Azyl Film Festival, Bratislava, Slovakia</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.6s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a class="various fancybox.iframe" title="Shareables" href="http://www.youtube.com/v/ftRUcvxHstM?fs=1&amp;autoplay=1">
+                                        <p class="subtitle">2013</p>
+                                        <div class="avatar"><img src="https://lh3.googleusercontent.com/3bozB2coZO2oikhR_dFHt5P6je_KCYr_5GbDX4jiR1EYftDCc5ZWdxTh1cJETPJYa6OS5S_NAMJu_7BqaxKXq39F_s-c5xejyu7HLOvlxPkNdfAsTu-_Hl0tnV9wmDT3IIBDMIJCvrYWE2VfT_MV7YkmK0sg3z4WJbwDNXjcVIJscxMtWTueg6MxD7853I_vJnnUSSeGArSAgVbYZPfa3VJ-D2fPQmrXIcfSmO0xh4p4rJdPQDlM0cWRKEKYOiHUoj5NRwaPIkZS-m7_f7p1fJD9wTPKopHrv8Io7htkMH20Qva5nXjGGjGp85ZFoz2LirhwDDQPW7Q3JbJ6GSJVweCZS_uSWi9irf1_jZVbjAmFCdz1Nstht8zYPIbfK7908OX3YXkDJVSk58Y_GNNcluj8uhwIK6BH6fl7ibXEj0ecCv_LHnQGcYGlyOdxyJcZzi3SxjMDd1aAU1i0JU1URdCMiw15AdYIfSk-8D9Mz4FUUC9HTKE-xkNftmryqWLUqJtmuh-WrsJ8X1spLQzmvtSQwshAVigjeeqL2A8aDSa2eUiyamyBN3febBVH_fW1zytjc3jygr41EV10in0svRm4O-JB_u8=s300-no" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Shareables</h5>
+                                        <p class="subtitle">Awarded at Videominuto Film Festival, Florence, Italy</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="wow bounceInUp" data-wow-delay="0.8s">
+                            <div class="team boxed-grey">
+                                <div class="inner">
+                                    <a class="various fancybox.iframe" title="Quando i Gatti Mangiavano il Pane" href="http://www.youtube.com/v/nFu8H-0kFgc?fs=1&amp;autoplay=1">
+                                        <p class="subtitle">2015</p>
+                                        <div class="avatar"><img src="https://lh3.googleusercontent.com/tEJ8OP-fM6ElcrXlrV9Oazb6dLE_12gk2o0pENPj8Nn6OoM4mZzRQOcMubxOjN8QLqZ6uGm4dR5nZYOsvUDL1vySjViql98QTIcguhoPkB_vzIO_WhxGiUIP_0f_xWQF-aXmeJDO7P517DwS_R9BWLt76pmq9F2fDGo36zzsRc6ob3OTwTwm-Y5kxgz4STODmQELJxSuInO2lrxrbna_nQfKqiXbUcpHCnxAPeUOUNdzGy-f7cZ31P_uKn9qA6KhRHG1r7Eu-GKxaH1VJ5CNo3CpNUTrtxwrwtjvSRyIn487IP9q_WB5R3KkVQTb-PwR1ShUGUPyUDi_lctFEiNOzQLfxiVrsG6ORnaIYRiwB-hl9ZDdSK35l3tSD6j1y9Zf6wJjxAmh0k-sG5AVC023ajbh9YSxiPbTX1ti8NibvGyN52m42DOotYSJ00SK-Pl66llMSrv9nv9MzxFjN_LwOReMjjqJKmOJjlKS9Itq7ZdafJvYkFMUa6TFI6WWZh-dRyaKDpaaq65j02BsaR0m_0shQF87q1-YBCMoGmejPnkdNRPS85pzGMOGVM372gS9DnRfL_fg0NpqHYis6jXPvC1q0S2BbSg=s300-no" alt="" class="img-responsive img-circle" /></div>
+                                        <h5>Quando i Gatti Mangiavano il Pane</h5>
+                                        <p class="subtitle">When Cats Ate Bread</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Section: Videos -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="wow shake" data-wow-delay="0.4s">
+                            <div class="page-scroll marginbot-30">
+                                <a href="#intro" id="totop" class="btn btn-circle">
+                                    <i class="fa fa-angle-double-up animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>
+                            <a class="footer" href="http://coding-and-design.blogspot.com/">coding-and-design.blogspot.com</a> &#183;
+                            <a class="footer" href="http://codepen.io/lucamug/">codepen.io/lucamug</a> &#183;
+                            <a class="footer" href="https://github.com/lucamug/">github.com/lucamug</a> &#183;
+                            <a class="footer" href="http://stackoverflow.com/users/693271/luke">stackoverflow.com/luke</a>
+                        </p>
+                        <p>&copy; 2016 &#183; Luca Mugnaini &#183; All rights reserved &#183; luca.mugnaini.lm(at)gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Core JavaScript Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <!-- Add fancyBox main JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.js"></script>
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    </body>
+    <script>
+    (function($) {
+
+        new WOW().init();
+
+        jQuery(window).load(function() {
+            jQuery("#preloader").delay(100).fadeOut("slow");
+            jQuery("#load").delay(100).fadeOut("slow");
+        });
+
+
+        //jQuery to collapse the navbar on scroll
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 50) {
+                $(".navbar-fixed-top").addClass("top-nav-collapse");
+            } else {
+                $(".navbar-fixed-top").removeClass("top-nav-collapse");
+            }
+        });
+
+        //jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('.navbar-nav li a').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+            $('.page-scroll a').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+    })(jQuery);
+
+    // INVOKE FANCYBOX WITH CUSTOM SETTINGS
+
+
+    $(document).ready(function() {
+        $(".various").fancybox({
+            maxWidth: 800,
+            maxHeight: 600,
+            fitToView: false,
+            width: '70%',
+            height: '70%',
+            autoSize: false,
+            closeClick: false,
+            openEffect: 'elastic',
+            closeEffect: 'none',
+            padding: 0,
+            closeBtn: false
+        });
+    });
+
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            helpers: {
+                title: {
+                    type: 'outside'
+                },
+                overlay: {
+                    showEarly: true
+                }
+            },
+            padding: 0,
+            margin: [14, 60, 14, 60],
+            closeBtn: false
+        });
+    });
+    </script>
+</body>
+
+</html>
